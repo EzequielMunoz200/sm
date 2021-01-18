@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+{{ parent() }}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+
+    <h1>Formulaire</h1>
+
+
+    {{ include('main/_form.html.twig') }}
+
+
+    {% block javascript %}
+    {{ parent() }}
+    {% endblock %}
+
+</div>
+{% endblock %}
